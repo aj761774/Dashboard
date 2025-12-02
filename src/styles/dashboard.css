@@ -1,0 +1,55 @@
+.dashboard {
+  padding: 20px;
+  margin-left: 240px;
+}
+
+.cards-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.order-and-customer-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  height: 188px;
+  width: 100%;
+}
+
+.big-card {
+  grid-column: span 1;
+  height: 458px;
+}
+
+.graph-card {
+  height: 250px;
+  margin-top: 20px;
+  border: 2px dashed var(--border);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .dashboard {
+    margin-left: 0;
+  }
+
+  .cards-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .order-and-customer-cards {
+    flex-direction: column;
+  }
+}
