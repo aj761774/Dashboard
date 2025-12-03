@@ -25,13 +25,13 @@ export default function Header({ dark, setDark, setSidebarOpen }) {
         </button>
 
         <div className="profile">
-          <div className="avatar">
+          <div className="avatar" title="Musharof">
             <img
               src="https://themewagon.github.io/tailadmin-vuejs/images/user/owner.jpg"
               alt="user profile"
             />
           </div>
-          <span>Musharof</span>
+          <span className="user-name">Musharof</span>
         </div>
       </div>
     </header>
